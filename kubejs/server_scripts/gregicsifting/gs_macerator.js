@@ -1,6 +1,6 @@
 ServerEvents.recipes(event => {
     function Macerator(Ore, Crushed, Byproduct, Dust, ID){
-        event.recipes.gtceu.macerator(`gtceu:macerator/macerate_${ID}_ore_chunk_to_crushed_ore`)
+        event.recipes.gtceu.macerator(`gtceu:macerate_${ID}_ore_chunk_to_crushed_ore`)
         .itemInputs(Ore)
         .itemOutputs(Crushed, Dust)
         .chancedOutput(Byproduct, 1400, 850)
