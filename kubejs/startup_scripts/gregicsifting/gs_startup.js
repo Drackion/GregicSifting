@@ -115,7 +115,7 @@ if (Platform.isLoaded('exnihilosequentia')) {
 
         //Stone
             function stone(id, name, base, overlay, color){
-                event.create(`chunk.${id}_stone`).displayName(`${name} Stone Chunk`).textureJson({layer0: base, layer1: overlay}).color(1, color)
+                event.create(`gregicsifting:chunk.${id}_stone`).displayName(`${name} Stone Chunk`).textureJson({layer0: base, layer1: overlay}).color(1, color)
             }
                 //Gravel
                     //string
@@ -227,7 +227,7 @@ if (Platform.isLoaded('exnihilosequentia')) {
                     //Aluminium
         //Sandy
             function sand(id, name, base, overlay, color){
-                event.create(`chunk.${id}_sand`).displayName(`${name} Sandy Chunk`).textureJson({layer0: base, layer1: overlay}).color(1, color)
+                event.create(`gregicsifting:chunk.${id}_sand`).displayName(`${name} Sandy Chunk`).textureJson({layer0: base, layer1: overlay}).color(1, color)
             }
             //Sand
                 //Bronze
@@ -261,7 +261,7 @@ if (Platform.isLoaded('exnihilosequentia')) {
                     sand('tantalite', 'Tantalite', ChunkSand, OverlayChunk, ColorTantalite)
         //Nether
             function nether(id, name, base, overlay, color){
-                event.create(`chunk.${id}_nether`).displayName(`${name} Nether Chunk`).textureJson({layer0: base, layer1: overlay}).color(1, color)
+                event.create(`gregicsifting:chunk.${id}_nether`).displayName(`${name} Nether Chunk`).textureJson({layer0: base, layer1: overlay}).color(1, color)
             }
             //Netherrack
                 //Bronze
@@ -293,7 +293,7 @@ if (Platform.isLoaded('exnihilosequentia')) {
                     nether('blue_topaz', 'Blue Topaz', GemNether, OverlayGem, ColorTopazBlue)
         //End
             function end(id, name, base, overlay, color){
-                event.create(`chunk.${id}_end`).displayName(`${name} End Chunk`).textureJson({layer0: base, layer1: overlay}).color(1, color)
+                event.create(`gregicsifting:chunk.${id}_end`).displayName(`${name} End Chunk`).textureJson({layer0: base, layer1: overlay}).color(1, color)
             }
             //Endstone
                 //Bronze
