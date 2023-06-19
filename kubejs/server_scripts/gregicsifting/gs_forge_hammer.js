@@ -1,6 +1,6 @@
 ServerEvents.recipes(event => {
     function ForgeHammer(Ore, Crushed, ID){
-        event.recipes.gtceu.forge_hammer(`gtceu:forge_hammer/hammer_${ID}_ore_chunk_to_crushed_ore`)
+        event.recipes.gtceu.forge_hammer(`gtceu:hammer_${ID}_ore_chunk_to_crushed_ore`)
         .itemInputs(Ore)
         .itemOutputs(Crushed)
         .duration(10)
