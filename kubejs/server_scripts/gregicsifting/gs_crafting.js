@@ -1,19 +1,19 @@
 ServerEvents.recipes(event => {
     //Meshes
-        event.shaped('1x exnihilosequentia:flint_mesh', ['RSR', 'SRS', 'RSR'], {S: 'minecraft:string', R: 'gtceu:rod.bronze'}).id('exnihilosequentia:ens_flint_mesh')
-        event.shaped('1x exnihilosequentia:iron_mesh', ['RSR', 'SRS', 'RSR'], {S: 'minecraft:string', R: 'gtceu:rod.steel'}).id('exnihilosequentia:ens_iron_mesh')
-        event.shaped('1x exnihilosequentia:diamond_mesh', ['RSR', 'SRS', 'RSR'], {S: 'minecraft:string', R: 'gtceu:rod.aluminium'}).id('exnihilosequentia:ens_diamond_mesh')
-        event.shaped('1x exnihilosequentia:emerald_mesh', ['RSR', 'SRS', 'RSR'], {S: 'minecraft:string', R: 'gtceu:rod.stainless_steel'}).id('exnihilosequentia:ens_emerald_mesh')
-        event.shaped('1x exnihilosequentia:netherite_mesh', ['RSR', 'SRS', 'RSR'], {S: 'minecraft:string', R: 'gtceu:rod.titanium'}).id('exnihilosequentia:ens_netherite_mesh')
+        event.shaped('1x exnihilosequentia:flint_mesh', ['RSR', 'SRS', 'RSR'], {S: 'minecraft:string', R: 'gtceu:bronze_rod'}).id('exnihilosequentia:ens_flint_mesh')
+        event.shaped('1x exnihilosequentia:iron_mesh', ['RSR', 'SRS', 'RSR'], {S: 'minecraft:string', R: 'gtceu:steel_rod'}).id('exnihilosequentia:ens_iron_mesh')
+        event.shaped('1x exnihilosequentia:diamond_mesh', ['RSR', 'SRS', 'RSR'], {S: 'minecraft:string', R: 'gtceu:aluminium_rod'}).id('exnihilosequentia:ens_diamond_mesh')
+        event.shaped('1x exnihilosequentia:emerald_mesh', ['RSR', 'SRS', 'RSR'], {S: 'minecraft:string', R: 'gtceu:stainless_steel_rod'}).id('exnihilosequentia:ens_emerald_mesh')
+        event.shaped('1x exnihilosequentia:netherite_mesh', ['RSR', 'SRS', 'RSR'], {S: 'minecraft:string', R: 'gtceu:titanium_rod'}).id('exnihilosequentia:ens_netherite_mesh')
     //Electric-Sieve
         function GTsieve(tier, circuit, piston, conveyor, hull, cable){
-            event.shaped(`1x gtceu:electric_sieve.${tier}`, ['CPC', 'BHB', 'WSW'], {C: circuit, P: piston, B: conveyor, H: hull, W: cable, S: '#exnihilosequentia:sieves'}).id(`gregicsifting:shaped/electric_sieve.${tier}`)
+            event.shaped(`1x gtceu:${tier}_electric_sieve`, ['CPC', 'BHB', 'WSW'], {C: circuit, P: piston, B: conveyor, H: hull, W: cable, S: '#exnihilosequentia:sieves'}).id(`gregicsifting:shaped/electric_sieve.${tier}`)
         }
-        GTsieve('lv', '#forge:circuits/lv', 'gtceu:electric.piston.lv', 'gtceu:conveyor.module.lv', 'gtceu:hull.lv', 'gtceu:cable_single.tin')
-        GTsieve('mv', '#forge:circuits/mv', 'gtceu:electric.piston.mv', 'gtceu:conveyor.module.mv', 'gtceu:hull.mv', 'gtceu:cable_single.copper')
-        GTsieve('hv', '#forge:circuits/hv', 'gtceu:electric.piston.hv', 'gtceu:conveyor.module.hv', 'gtceu:hull.hv', 'gtceu:cable_single.gold')
-        GTsieve('ev', '#forge:circuits/ev', 'gtceu:electric.piston.ev', 'gtceu:conveyor.module.ev', 'gtceu:hull.ev', 'gtceu:cable_single.aluminium')
-        GTsieve('iv', '#forge:circuits/iv', 'gtceu:electric.piston.iv', 'gtceu:conveyor.module.iv', 'gtceu:hull.iv', 'gtceu:cable_single.platinum')
+        GTsieve('lv', '#forge:circuits/lv', 'gtceu:lv_electric_piston', 'gtceu:lv_conveyor_module', 'gtceu:lv_machine_hull', 'gtceu:tin_single_cable')
+        GTsieve('mv', '#forge:circuits/mv', 'gtceu:mv_electric_piston', 'gtceu:mv_conveyor_module', 'gtceu:mv_machine_hull', 'gtceu:copper_single_cable')
+        GTsieve('hv', '#forge:circuits/hv', 'gtceu:hv_electric_piston', 'gtceu:hv_conveyor_module', 'gtceu:hv_machine_hull', 'gtceu:gold_single_cable')
+        GTsieve('ev', '#forge:circuits/ev', 'gtceu:ev_electric_piston', 'gtceu:ev_conveyor_module', 'gtceu:ev_machine_hull', 'gtceu:aluminium_single_cable')
+        GTsieve('iv', '#forge:circuits/iv', 'gtceu:iv_electric_piston', 'gtceu:iv_conveyor_module', 'gtceu:iv_machine_hull', 'gtceu:platinum_single_cable')
     //Crook
         event.recipes.exnihilosequentia.crook('gtceu:rubber_leaves')
             .addDrop('gtceu:rubber_sapling', 1, 0.05)
