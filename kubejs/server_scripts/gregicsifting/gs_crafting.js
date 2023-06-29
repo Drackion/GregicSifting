@@ -19,7 +19,7 @@ ServerEvents.recipes(event => {
             .addDrop('gtceu:rubber_sapling', 1, 0.05)
             .id('gregicsifting:crook/rubber_sapling')
     //Barrel-Transformation
-        event.recipes.exnihilosequentia.fluid_item('minecraft:glowstone_dust', 'minecraft:end_stone', 'gtceu:helium').id('exnihilosequentia:fluid_item/ens_end_stone')
+        event.recipes.exnihilosequentia.fluid_item('minecraft:glowstone_dust', 'minecraft:end_stone', 'gtceu:deuterium').id('exnihilosequentia:fluid_item/ens_end_stone')
     //Removal
         //gravel
             event.remove({id:'exnihilosequentia:sieve/ens_copper_pieces_gravel'})
