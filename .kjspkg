@@ -1,0 +1,9 @@
+{
+    "author": "Drack.ion",
+    "description": "<description>",
+    
+    "versions": [9],
+    "modloaders": ["forge"],
+    "dependencies": ["mod:gtceu", "mod:exnihilosequentia"],
+    "incompatibilities": []
+}
