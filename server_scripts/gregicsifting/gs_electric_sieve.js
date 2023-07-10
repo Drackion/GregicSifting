@@ -478,7 +478,7 @@ ServerEvents.recipes(event => {
                     //Stainless
                         graniteChance('stainless', 'emerald', 450)
                     //Titanium
-                        graniteChance('titanium', 'netherrite', 500)
+                        graniteChance('titanium', 'netherite', 500)
     //Diorite
         //String
             event.recipes.gtceu.electric_sieve('gtceu:diorite_sifting_type_string')
@@ -616,7 +616,7 @@ ServerEvents.recipes(event => {
                     //Stainless
                         dioriteChance('stainless', 'emerald', 450)
                     //Titanium
-                        dioriteChance('titanium', 'netherrite', 500)
+                        dioriteChance('titanium', 'netherite', 500)
     //Netherrack
         //Bronze
             event.recipes.gtceu.electric_sieve('gtceu:netherrack_sifting_type_bronze')
@@ -687,7 +687,7 @@ ServerEvents.recipes(event => {
                     //Stainless
                         netherChance('stainless', 'emerald', 450)
                     //Titanium
-                        netherChance('titanium', 'netherrite', 500)
+                        netherChance('titanium', 'netherite', 500)
     //Endstone
         //Bronze
             event.recipes.gtceu.electric_sieve('gtceu:endstone_sifting_type_bronze')
@@ -775,5 +775,5 @@ ServerEvents.recipes(event => {
                     //Stainless
                         endChance('stainless', 'emerald', 450)
                     //Titanium
-                        endChance('titanium', 'netherrite', 500)
+                        endChance('titanium', 'netherite', 500)
 })
