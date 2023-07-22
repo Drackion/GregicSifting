@@ -339,9 +339,7 @@ if (Platform.isLoaded('gtceu')) {
             .setSound(GTSoundEntries.MACERATOR);
     })
     GTCEuStartupEvents.registry('gtceu:machine', event => {
-        event.create("electric_sieve", 'simple')
-            .recipeType('electric_sieve')
-            .tankScalingFunction(tier => 3200)
-            .tiers(GTValues.LV, GTValues.MV, GTValues.HV, GTValues.EV, GTValues.IV);
+        event.create("electric_sieve", 'simple', GTValues.LV, GTValues.MV, GTValues.HV, GTValues.EV, GTValues.IV)
+            .recipeType('electric_sieve', true, true).workableTieredHullRenderer("gtceu:block/machines/electric_sieve")
     })
 }
