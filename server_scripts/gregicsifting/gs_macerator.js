@@ -3,7 +3,7 @@ ServerEvents.recipes(event => {
         event.recipes.gtceu.macerator(`gtceu:macerate_${ID}_ore_chunk_to_crushed_ore`)
         .itemInputs(Ore)
         .itemOutputs(Crushed, Dust)
-        .chancedOutput(Byproduct, 1400, 850)
+        .chancedOutput(Item.of(Byproduct, 1), 1400, 850)
         .duration(400)
         .EUt(2)  
     }
