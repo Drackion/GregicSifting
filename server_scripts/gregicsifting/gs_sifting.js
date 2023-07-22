@@ -1,36 +1,18 @@
 ServerEvents.recipes(event => {
     function stringMesh(inputItem, outputItem, defaultChance, bonusChance1, bonusChance2, bonusChance3, bonusChance4, bonusChance5){
-        event.recipes.exnihilosequentia.sieve(inputItem, outputItem)
-        .addRoll(defaultChance, 'string')
-        .addRoll(bonusChance1, 'flint')
-        .addRoll(bonusChance2, 'iron')
-        .addRoll(bonusChance3, 'diamond')
-        .addRoll(bonusChance4, 'emerald')
-        .addRoll(bonusChance5, 'netherite')
+        event.custom({type: 'exnihilosequentia:sieve', input: {item: inputItem}, result: {item: outputItem}, rolls: [{chance: defaultChance, mesh: 'string'}, {chance: bonusChance1, mesh: 'flint'}, {chance: bonusChance2, mesh: 'iron'}, {chance: bonusChance3, mesh: 'diamond'}, {chance: bonusChance4, mesh: 'emerald'}, {chance: bonusChance5, mesh: 'netherite'}]})
     }
 
     function bronzeMesh(inputItem, outputItem, defaultChance, bonusChance1, bonusChance2, bonusChance3, bonusChance4){
-        event.recipes.exnihilosequentia.sieve(inputItem, outputItem)
-        .addRoll(defaultChance, 'flint')
-        .addRoll(bonusChance1, 'iron')
-        .addRoll(bonusChance2, 'diamond')
-        .addRoll(bonusChance3, 'emerald')
-        .addRoll(bonusChance4, 'netherite')
+        event.custom({type: 'exnihilosequentia:sieve', input: {item: inputItem}, result: {item: outputItem}, rolls: [{chance: defaultChance, mesh: 'flint'}, {chance: bonusChance1, mesh: 'iron'}, {chance: bonusChance2, mesh: 'diamond'}, {chance: bonusChance3, mesh: 'emerald'}, {chance: bonusChance4, mesh: 'netherite'}]})
     }
 
     function steelMesh(inputItem, outputItem, defaultChance, bonusChance1, bonusChance2, bonusChance3){
-        event.recipes.exnihilosequentia.sieve(inputItem, outputItem)
-        .addRoll(defaultChance, 'iron')
-        .addRoll(bonusChance1, 'diamond')
-        .addRoll(bonusChance2, 'emerald')
-        .addRoll(bonusChance3, 'netherite')
+        event.custom({type: 'exnihilosequentia:sieve', input: {item: inputItem}, result: {item: outputItem}, rolls: [{chance: defaultChance, mesh: 'iron'}, {chance: bonusChance1, mesh: 'diamond'}, {chance: bonusChance2, mesh: 'emerald'}, {chance: bonusChance3, mesh: 'netherite'}]})
     }
 
     function aluminiumMesh(inputItem, outputItem, defaultChance, bonusChance1, bonusChance2){
-        event.recipes.exnihilosequentia.sieve(inputItem, outputItem)
-        .addRoll(defaultChance, 'diamond')
-        .addRoll(bonusChance1, 'emerald')
-        .addRoll(bonusChance2, 'netherite')
+        event.custom({type: 'exnihilosequentia:sieve', input: {item: inputItem}, result: {item: outputItem}, rolls: [{chance: defaultChance, mesh: 'diamond'}, {chance: bonusChance1, mesh: 'emerald'}, {chance: bonusChance2, mesh: 'netherite'}]})
     }
 
     //Sifting
