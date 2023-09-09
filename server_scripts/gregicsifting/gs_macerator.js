@@ -138,7 +138,7 @@ ServerEvents.recipes(event => {
             Macerator('gregicsifting:chunk.powellite_stone', '2x gtceu:powellite_crushed_ore', 'gtceu:iron_dust', 'gtceu:stone_dust', 'stone_powellite')
     //Diorite
         //String
-            Macerator('gregicsifting:chunk.alunite', '6x gtceu:alunite_crushed_ore', 'gtceu:alunite_dust', 'gtceu:stone_dust', 'stone_alunite')
+            Macerator('gregicsifting:chunk.alunite_stone', '6x gtceu:alunite_crushed_ore', 'gtceu:alunite_dust', 'gtceu:stone_dust', 'stone_alunite')
         //Bronze
         //Steel
         //Aluminium
